@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(2, 13, 37);
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio {
+    font-family:  'Orelega One', cursive; 
+    font-size: 70px;
+    color: rgb(168, 139, 44);
+}
+
+section#inicio {
+    background: url(imagenes/portada.jpg);
+    background-size: cover;
+}
+
+#about {
+    font-family:  'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: rgb(168, 139, 44);
+    display: flex;
+}
