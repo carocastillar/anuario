@@ -1,34 +1,116 @@
-body {
-    background-color: rgb(2, 13, 37);
+* {
+    margin: 0;
+    padding: 0;    
 }
 
 .contenedor {
     width: 100%;
-    height: auto;
-}
-
-section {
-    display: flex;
-    width: 100%;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-#inicio {
-    font-family:  'Orelega One', cursive; 
-    font-size: 70px;
-    color: rgb(168, 139, 44);
-}
-
-section#inicio {
-    background: url(imagenes/portada.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(imagenes/portada.jpg);
+    background-position: center;
     background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
 
-#about {
-    font-family:  'Cormorant Garamond', serif;
-    font-size: 30px;
-    color: rgb(168, 139, 44);
+.nav-bar {
+    height: 12%;
     display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(161, 131, 31);
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+.row {
+    display: flex;
+    height: 84%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: rgb(161, 131, 31);
+    font-size: 75px;
+    font-family: Domine;
+    letter-spacing: 4px;
+}
+
+p {
+    color: rgb(224, 207, 148);
+    font-size: 20px;
+    line-height: 25px;
+}
+
+button {
+    width: 180px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 12px 0;
+    background: rgb(224, 207, 148);
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    margin-top: 30px;
+    font-family: Montserrat;
+}
+
+.card {
+    width: 250px;
+    height: 280px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 40px 35px;
+    margin-right: 40px;    
+    background-image: url(imagenes/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    
+}
+
+.card2 {
+
+}
+
+.card3 {
+
+}
+
+.card2 {
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: rgb(224, 207, 148);
+    text-shadow: 0 0 5px #999;
 }
