@@ -208,7 +208,7 @@ h5 {
 
 .galeria h1 {
     text-align: center;
-    margin: 20px 5px 15px 5px;
+    margin: 20px 0 15px 0;
     font-weight: 300;
 }
 
@@ -227,10 +227,10 @@ h5 {
 }
 
 .contenedor-imagenes .imagen {
-    width: 25%;
+    width: 32%;
     position: relative;
-    height: 410px;
-    margin-bottom: 5px;
+    height: 420px;
+    margin-bottom: 15px;
 }
 
 .imagen img {
