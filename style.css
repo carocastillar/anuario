@@ -1,6 +1,10 @@
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+}
+
+body {
+    background: #042546;
 }
 
 .contenedor {
@@ -17,12 +21,8 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(imagenes/portada.jpg);
 }
 
-.contenedor2 {
-    background-color: rgb(2, 29, 70);
-}
-
 .contenedor3 {
-    background-color: rgb(2, 29, 70);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(imagenes/portada.jpg);
 }
 
 .nav-bar {
@@ -73,15 +73,17 @@ p {
     font-family: Raleway;
 }
 
-button {
-    width: 180px;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    padding: 12px 0;
+.boton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 29px;
+    border-radius: 40px;
     background: rgb(224, 207, 148);
-    border: 0;
-    border-radius: 30px;
-    outline: none;
+    color:rgb(44, 44, 44);
+    font-size: 25px;
+    z-index: 9;
+    margin: 10px;
+    margin-left: 300px;
     margin-top: 30px;
     font-family: Montserrat;
 }
@@ -96,26 +98,25 @@ button {
     cursor: pointer;
     margin: 40px 35px;
     margin-right: 40px;    
-    background-image: url(imagenes/portada.jpg);
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
 }
 
 .card1 {
-    
+    background-image: url(imagenes/fogata.jpg);
 }
 
 .card2 {
-
+    background-image: url(imagenes/ultimos\ dias.jpg);
 }
 
 .card3 {
-
+    background-image: url(imagenes/retiro.jpg);
 }
 
-.card2 {
-
+.card4 {
+    background-image: url(imagenes/primeros\ dias.jpg);
 }
 
 .card:hover {
@@ -123,6 +124,181 @@ button {
 }
 
 h5 {
-    color: rgb(224, 207, 148);
-    text-shadow: 0 0 5px #999;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(68, 68, 68);
+    border-radius: 3px;
+    background: rgba(245, 192, 0, 0.514);
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.card1 h5 {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.card2 h5 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card4 h5 {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.form {
+    background: #24303c;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 6px;
+    padding: 60px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.form_container {
+    width: 100%;
+    display: grid;
+    gap: 25px;
+}
+
+.form_titulo {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 4px;
+    font-family: Raleway;
+    color: white;
+}
+
+.form_input {
+    font-family: Raleway;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+}
+
+.form_input--message {
+    resize: none;
+    padding: 30px 10px;
+}
+
+.form_cta {
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    width: 106%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.galeria {
+    font-family: Montserrat;
+}
+
+.galeria h1 {
+    text-align: center;
+    margin: 20px 5px 15px 5px;
+    font-weight: 300;
+}
+
+.linea {
+    border-top: 5px solid rgb(224, 207, 148);
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+
+.contenedor-imagenes .imagen {
+    width: 25%;
+    position: relative;
+    height: 410px;
+    margin-bottom: 5px;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(161, 131, 31, 0.692);
+    width: 100%;
+    height: 0;
+    transition: .7s;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.overlay p {
+    color: rgb(235, 233, 233);
+    font-size: 18px;
+    position: absolute;
+    top: 30%;
+    padding: 15px;
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .contenedor-imagenes {
+        width: 92%;
+        height: 300px;
+    }
+    
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contenedor-imagenes h2{
+        font-size: 22px;
+    }
+
+    .contenedor-imagenes {
+        width: 98%;
+    }
+    
+    .contenedor-imagenes .imagen {
+        width: 80%;
+    }
 }
